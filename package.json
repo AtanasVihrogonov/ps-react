@@ -50,6 +50,7 @@
     "semver": "^7.3.5",
     "source-map-loader": "^3.0.0",
     "style-loader": "^3.3.1",
+    "styled-components": "^1.4.5",
     "tailwindcss": "^3.0.2",
     "terser-webpack-plugin": "^5.2.5",
     "web-vitals": "^2.1.4",
@@ -59,8 +60,8 @@
     "workbox-webpack-plugin": "^6.4.1"
   },
   "scripts": {
-    "prestart":"npm run gen:docs",
-    "start":"npm-run-all --parallel start:docs gen:docs-watch",
+    "prestart": "npm run gen:docs",
+    "start": "npm-run-all --parallel start:docs gen:docs-watch",
     "start:docs": "node scripts/start.js",
     "gen:docs": "node scripts/generateComponentData.js",
     "gen:docs-watch": "npm run gen:docs -- --watch",
